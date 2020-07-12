@@ -1,0 +1,12 @@
+modules:
+  'jira:issuePanel':
+    - key: forge-language-identification
+      function: main
+      title: forge-language-identification
+      description: Language identification of the JIRA description
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: 'ari:cloud:ecosystem::app/389861e2-592f-4463-bb66-8fdfb7de5096'
+  name: forge-language-identification
