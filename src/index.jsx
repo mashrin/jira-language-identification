@@ -16,7 +16,7 @@ const Panel = () => {
     const issueResponse = await api.asApp().requestJira(`/rest/api/2/issue/${issueKey}?fields=summary,description`);
     await checkResponse('Jira API', issueResponse);
     const { summary, description } = (await issueResponse.json()).fields;
-    const response = await api.fetch(`https://api.meaningcloud.com/lang-2.0?key=961f84ad022230871e07261de9f70a28&txt=${description}`);
+    const response = await api.fetch(`https://api.meaningcloud.com/lang-2.0?key=57ca592c1af82ad89eed40c8aa5eec4f&txt=${description}`);
     const languages = (await response.json()).language_list;
     for (var key in languages) {
       if (languages.hasOwnProperty(key)) {
